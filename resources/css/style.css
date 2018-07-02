@@ -1,20 +1,41 @@
 body {
+margin: auto 0;
 font-style: arial;
+font-size: 16px;
+color: rgb(74, 74, 74);
+
+}
+.change-cursor {
+  cursor: url('resources/images/peach-cursor.png'), auto;
 }
 
+/*NAV set up*/
+
+nav {
+  z-index: 5;
+  position: fixed;
 
 
+}
 
 /* Dropdown Button */
 .dropbtn {
+  border: none;
+  z-index: 1;
+}
+button {
+  background-color: transparent;
+  padding-left: 0;
+  align-content: flex-start;
 
-    border: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -22,8 +43,9 @@ font-style: arial;
     display: none;
     position: absolute;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
-    z-index: 1;
+    z-index: 2;
+    align-content: flex-start;
+
 }
 
 /* Links inside the dropdown */
@@ -35,19 +57,227 @@ font-style: arial;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {}
+.dropdown-content a:hover {
+  text-decoration: none;
+  color: grey;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+    float: left;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
+  opacity: 0.5;
+  transform: scale(1.2, 1.2);
 
 }
 
 
+/*MENU */
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Menu images */
+.dropbtn img {
+  width: 50%;
+  height: auto;
+}
+
+.dropbtn {
+  display: flex;
+  align-content: flex-start;
+}
+a img {
+  width: 40%;
+  height: auto;
+  transition-property: opacity;
+  transition-duration: 1.5s;
+}
+
+a img:hover {
+opacity: 0;
+
+
+}
+#greathomes {
+transition: background;
+transition-duration: 2s;
+transition-delay: 2s;
+
+
+}
+#greathomes:hover {
+  background-image: url('../images/ghlogo.JPG');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: auto;
+
+
+
+}
+#greenluck:hover {
+  background-image: url('../images/gllogo.JPG');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: auto;
+
+}
+#jk:hover {
+  background-image: url('../images/jklogo.JPG');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: auto;
+
+}
+
 #neighbours:hover {
-  background-image: url("pages/neighbours/neighbours.png");
+  background-image: url('../images/neighbourslogo.png');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  width: 40%;
+  height: auto;
+
+
+}
+#noise:hover {
+  background-image: url('../images/noiselogo.png');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  width: 40%;
+  height: auto;
+
+}
+#pets:hover {
+  background-image: url('../images/petslogo.jpg');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: auto;
+
+
+}
+#photos:hover {
+  background-image: url('../images/photologo.jpg');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: auto;
+
+}
+#sea:hover {
+  background-image: url('../images/sealogo.png');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+width: 40%;
+height: auto;
+
+}
+#toaster:hover {
+  background-image: url('../images/toasterlogo.JPG');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+width: 40%;
+height: auto;
+
+}
+#unknown:hover {
+  background-image: url('../images/uklogo.JPG');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: auto;
+
+
+}
+#vestigios:hover {
+  background-image: url('../images/veslogo.JPG');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+width: 40%;
+height: auto;
+
+}
+#trainview:hover {
+  background-image: url('../images/trainviewlogo.jpg');
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+width: 40%;
+height: auto;
+
+}
+
+.neighbours {
+  display: flex;
+  align-items: flex-end;
+}
+.about {
+  display: flex;
+  align-content: flex-end;
+}
+
+/*TEXT BANNER*/
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  margin:0 auto;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2em;
+
+}
+.col  {
+  display: flex;
+  flex-direction: column;
+}
+.one {
+  display: flex;
+  align-content: center;
+  padding-left: 20em;
+
+}
+.a .c .g{
+  display: flex;
+  align-content: flex-start;
 }

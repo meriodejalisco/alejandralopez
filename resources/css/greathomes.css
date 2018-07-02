@@ -1,0 +1,101 @@
+body {
+  margin: auto 0;
+  font-style: arial;
+  font-size: 16px;
+  color: rgb(74, 74, 74);
+
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-top: 4rem;
+}
+.dropbtn img {
+  width: 50%;
+  height: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 10rem;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    float: left;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  opacity: 0.5;
+  transform: scale(1.2, 1.2);}
+
+
+
+/* Main content */
+ .img__container {
+   display: flex;
+   flex-direction: column;
+   margin-top: 5rem;
+   margin-left: 5rem;
+   margin-right: 5rem;
+   width: 100%;
+
+ }
+ .img__wrap {
+   display: flex;
+   align-items: center;
+   align-content: center;
+   position: relative;
+   width: 50%;
+ }
+
+ .img__description {
+   position: absolute;
+   background: white;
+   color: black;
+   visibility: hidden;
+   opacity: 0;
+   text-align: center;
+   transition: opacity .2s, visibility .2s;
+ }
+.img__img img {
+  width: 100%;
+
+}
+
+ .img__wrap:hover .img__description {
+   visibility: visible;
+   opacity: 1;
+ }
+ .img__img:hover {
+   opacity: 0.50;
+ }
